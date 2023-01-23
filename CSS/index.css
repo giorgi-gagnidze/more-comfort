@@ -1,0 +1,122 @@
+/* Import font start*/
+
+/* Method one */
+
+@font-face {
+  font-family: "BPG LE Studio 02 Caps";
+  src: url("../fonts/bpg-le-studio-02-caps-webfont.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/bpg-le-studio-02-caps-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/bpg-le-studio-02-caps-webfont.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/bpg-le-studio-02-caps-webfont.woff") format("woff"),
+    /* Pretty Modern Browsers */
+      url("../fonts/bpg-le-studio-02-caps-webfont.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/bpg-le-studio-02-caps-webfont.svg#bpg_le_studio_02_capsregular")
+      format("svg"); /* Legacy iOS */
+}
+
+/* Import fornt end */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #5aa3ce;
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-container {
+  max-width: 450px;
+  width: 100%;
+  display: flex;
+  /* border: 1px solid black; */
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 0;
+  background-color: #5664db;
+}
+
+.header__logo-container {
+  margin-bottom: 16px;
+}
+
+.header__logo-container h1 {
+  text-align: center;
+  font-family: "BPG LE Studio 02 Caps", sans-serif;
+  color: rgb(36, 36, 36);
+  font-size: 30px;
+}
+
+.header-__nav-container {
+}
+
+.header__menu {
+  display: none;
+}
+.header__social-container {
+  display: flex;
+  gap: 32px;
+}
+
+.header__social-container svg {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 16px;
+  color: #d3faff;
+}
+.bi {
+}
+.bi-facebook {
+}
+.bi-instagram {
+}
+.bi-youtube {
+}
+
+.container-image {
+  margin-bottom: 16px;
+}
+
+.container-image img {
+  width: 100%;
+  max-width: 450px;
+  object-fit: cover;
+}
+
+h2 {
+  font-family: "BPG LE Studio 02 Caps", sans-serif;
+  color: rgb(36, 36, 36);
+  text-align: center;
+  width: 200px;
+}
+
+.footer-container {
+}
+.footer__menu-container {
+}
+
+.footer__menu-container ul {
+  list-style: none;
+  font-family: "BPG LE Studio 02 Caps", sans-serif;
+  color: rgb(36, 36, 36);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
