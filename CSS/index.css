@@ -39,6 +39,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .header-container {
@@ -50,6 +51,7 @@ body {
   align-items: center;
   padding: 16px 0;
   background-color: #5664db;
+  position: relative;
 }
 
 .header__logo-container {
@@ -89,6 +91,30 @@ body {
 .bi-youtube {
 }
 
+.hamburger-lines {
+  position: absolute;
+  right: 16px;
+  top: 32px;
+}
+
+.line {
+  width: 28px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  border: 2px solid rgb(36, 36, 36);
+}
+
+.menu-checkbox {
+  position: absolute;
+  width: 38px;
+  height: 25px;
+  top: 30px;
+  right: 11px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
 .container-image {
   margin-bottom: 16px;
 }
@@ -119,4 +145,46 @@ h2 {
   flex-direction: column;
   align-items: center;
   gap: 8px;
+}
+
+.menu__responsive {
+  position: absolute;
+  background-color: rgb(36, 36, 36);
+  opacity: 0.8;
+  color: #d3faff;
+  top: 0;
+  bottom: -200px;
+  right: 0;
+  left: 0;
+  transform: translateY(-150%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.menu__responsive ul {
+  list-style: none;
+  font-family: "BPG LE Studio 02 Caps", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 28px;
+}
+
+input[type="checkbox"]:checked ~ .menu__responsive {
+  transform: translateY(0);
+}
+
+input[type="checkbox"]:checked ~ .hamburger-lines {
+  opacity: 0;
+}
+
+.container__x {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  top: 18px;
+  right: 18px;
 }
